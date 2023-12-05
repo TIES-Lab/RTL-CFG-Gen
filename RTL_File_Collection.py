@@ -78,9 +78,8 @@ def get_rtl(root_path: str, dest: str, rtl_fls: list[str] = []) -> list[str]:
 # ========================================================================================================================================================
 
 # =================================================== Path Directory ===================================================
-# root_path = os.path.abspath('C:/Users/ssm220008/OneDrive - The University of Texas at Dallas/DAC_ext')
-root_path: str = 'D:/PhD/DAC_ext'
-rtl_fldr_path = os.path.join(root_path, 'SoC_2')
-cpy_dest_path = os.path.join(rtl_fldr_path, 'All_RTL')
+root_path = os.path.abspath('')                             # The directory where all the design files are located.
+rtl_fldr_path = os.path.join(root_path, '')                 # Where the design folder is located
+cpy_dest_path = os.path.join(rtl_fldr_path, 'All_RTL')      # All the RTL .v and .sv files are copied into this location
 # ======================================================================================================================
 get_rtl(rtl_fldr_path, cpy_dest_path)
