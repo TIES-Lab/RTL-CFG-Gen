@@ -4760,7 +4760,7 @@ inputkeys = []
 inputvals = []
 firstnode = input("Choose which node to reach: " )
 conditioncheck = input("Variable to check: ")
-with open('C://rtlContest/RTL-CFG/input_node.txt', 'w') as f:
+with open('input_node.txt', 'w') as f:
     for i in Nodeflowx:
         if conditioncheck.split()[0] in i and firstnode in i:
             i.split()
@@ -4769,7 +4769,7 @@ with open('C://rtlContest/RTL-CFG/input_node.txt', 'w') as f:
 path, inputvals, inputkeys = EdgeRealignment(firstnode, Nodeflowx, 1, [])
 
 print(path)
-with open('C://rtlContest/RTL-CFG/input_value.txt', 'w') as f:
+with open('input_value.txt', 'w') as f:
     for i,value in enumerate(inputkeys):
         for j,val in enumerate(inputvals):
             if i==j:
