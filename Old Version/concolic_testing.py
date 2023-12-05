@@ -600,7 +600,7 @@ with open(r"inputnode.txt", "r") as f:
             else:
                 inputnode = inputnode + line.split()[0] + '!=' + line.split()[1]
 
-with open('C://iverilog/template_module.v', 'w') as f:
+with open('template_module.v', 'w') as f:
     
     f.write("module template_module(\n")
     
@@ -737,9 +737,9 @@ reverseinputkeyslist = []
 
 # Append the clock signals to the list togglevariables
 
-togglevariables = ['clk']
+togglevariables = ['tck_pad_i']                                # Insert the name of clock variable
 
-with open('C://iverilog/template_testbench.v', 'w') as f:
+with open('template_testbench.v', 'w') as f:
     
     f.write("module template_testbench;\n")
     
