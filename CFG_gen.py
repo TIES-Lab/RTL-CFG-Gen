@@ -777,13 +777,12 @@ def main():
     # ==================================================================================================================
     # ================================================ Folder Location =================================================
     # ==================================================================================================================
-    # root_loc: str = 'C:/Users/ssm220008/OneDrive - The University of Texas at Dallas/DAC_ext'
-    root_loc: str = os.path.abspath('/Users/Samit/Phd Files/Research Projects/RTL_Concolic_Testing-main')
-    RTL_loc: str = ''
-    srch_rtl: str = os.path.join(root_loc, RTL_loc)
-    CFG_loc: str = 'Extracted_CFG'
-    Dest_loc: str = os.path.join(root_loc, CFG_loc)
-    Property_loc: str = os.path.join(root_loc, "SoC_2", "spec.txt")
+    root_loc: str = os.path.abspath('')                                # Root Location for the project directory.
+    RTL_loc: str = ''                                                  # The folder in Root Location where the rtl files are collected.
+    srch_rtl: str = os.path.join(root_loc, RTL_loc)                    #
+    CFG_loc: str = 'Extracted_CFG'                                     
+    Dest_loc: str = os.path.join(root_loc, CFG_loc)                    # The directories where the CFGs are stored
+    Property_loc: str = os.path.join(root_loc, "", "")                 # File name of the property
     # ================================================ Folder Location =================================================
 
     accpt_frmts = ['.v', '.sv']
