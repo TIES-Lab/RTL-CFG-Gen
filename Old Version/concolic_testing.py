@@ -583,7 +583,7 @@ index4 = 0
 inputnode = ''
 
 
-with open(r"C:\\rtlContest\RTL-CFG\inputvals.txt", "r") as f:
+with open(r"inputvals.txt", "r") as f:
         
         for line in f:
             
@@ -591,7 +591,7 @@ with open(r"C:\\rtlContest\RTL-CFG\inputvals.txt", "r") as f:
             inputvals.append(line)
             inputvariables.append(line.split()[0])
 
-with open(r"C:\\rtlContest\RTL-CFG\inputnode.txt", "r") as f:
+with open(r"inputnode.txt", "r") as f:
         
         for line in f:
             line = line.replace('\n','')
@@ -920,4 +920,4 @@ with open('C://iverilog/template_testbench.v', 'w') as f:
     f.write("\n\t\tend")
     f.write('\nendmodule')
 
-proc = subprocess.Popen(['cmd', '/k', 'cd', 'C://iverilog', '&&', 'iverilog', '-o', 'dsn', 'template_testbench.v', 'template_module.v', '&&', 'vvp', 'dsn'])
+# proc = subprocess.Popen(['cmd', '/k', 'cd', 'C://iverilog', '&&', 'iverilog', '-o', 'dsn', 'template_testbench.v', 'template_module.v', '&&', 'vvp', 'dsn'])
