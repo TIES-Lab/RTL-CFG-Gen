@@ -1,6 +1,9 @@
 # Repository Details
 This Repo contains codes for path-specification. It has four main code files *i.e.*, RTL_File_Collection, Preprocessing, CFG-gen, Branch_extraction.
 
+###### Prerequisites:
+- Python 3.7+
+
 | Code File Name | What it Does |
 | --- | --- |
 | RTL_File_Collection.py | Collects all the ".v" and ".sv" files from the root directory|
